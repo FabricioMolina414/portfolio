@@ -1,0 +1,254 @@
+/*? aquí se dejan los estilos del header **/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60px;
+    background-color: var(--soft-white);
+}
+
+.header__menu-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 60px;
+    padding-top: 5px;
+    background-color: var(--very-dark-blue);
+    border-bottom-left-radius: 15px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.header__menu--button {
+    display: none;
+}
+
+.navbar {
+    top: 20px;
+    left: calc(20%);
+    visibility: visible;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__list--item {
+    width: 108px;
+    height: 20px;
+    color: var(--very-dark-blue);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: var(--soft-white);
+}
+
+.navbar__list--item a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.navbar__list--item:hover {
+    font-weight: 700;
+    background-color: var(--soft-white);
+    text-decoration: underline;
+}
+
+/*? Estilos de la primer sección **/
+
+.first-section {
+    width: 100%;
+    height: 189px;
+}
+
+.first-section__images {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 260px;
+    height: 355px;
+    margin: 0px;
+    background-color: var(--very-dark-blue);
+}
+
+.first-section__images img {
+    position: absolute;
+    top: 25%;
+    left: calc(17%);
+}
+
+.first-section__profile-picture {
+    position: absolute;
+    top: 27px;
+    left: calc(23%);
+    width: 124px;
+    height: 200px;
+    content: url(../images/profile-tablet.png)
+}
+
+
+.first-section__name {
+    width: 385px;
+    height: 36px;
+    margin: 45px 50px 0 calc(12%);
+
+}
+
+.first-section__name h1 {
+    width: 385px;
+    height: 36px;
+    text-align: left;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+.first-section__developer {
+    width: 400px;
+    max-width: 450px;
+    height: 36px;
+    margin: 45px 50px 0 calc(12%);
+}
+
+.first-section__developer h2 {
+    max-width: 400px;
+    font-family: 'Source Sans Pro';
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+.background__container {
+    width: 100%;
+    height: 342px;
+    background-image: url(../images/tablet-images/monitor-tablet-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*? sección about me **/
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    margin: 0
+}
+
+.about-me__contents {
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-me__contents h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.about-me__contents p {
+    width: 100%;
+}
+
+
+/*? Skills section **/
+
+.skills {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.skills__container h2 {
+    margin-bottom: 60px;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+/** sección proyectos **/
+
+.projects {
+    background-color: var(--very-dark-blue);
+}
+
+.projects__page-logo {
+    display: none;
+}
+
+.projects h2 {
+    margin: 40px auto;
+    color: var(--soft-white);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.projects__preview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.projects__preview--article img {
+    width: 280px;
+    height: 170px;
+    margin-right: 20px;
+}
+
+.projects__preview--article:hover img:hover {
+    border: 2px solid var(--soft-white);
+}
+
+
+/** contact me **/
+
+.contact-me {
+    background-color: var(--soft-white);
+}
+
+.contact-me h2 {
+    margin: 40px auto;
+    color: var(--dark-blue);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    color: var(--dark-blue);
+    font-size: 2.2rem;
+}
+
+input {
+    max-width: 700px;
+    height: 34px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    border: 1px solid var(--dark-blue);
+}
+
+textarea {
+    max-width: 700px;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 1px solid var(--dark-blue);
+}
+
+#send-message {
+    height: 50px;
+    margin-top: 20px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+#send-message:hover {
+    cursor: pointer;
+}

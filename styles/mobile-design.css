@@ -1,0 +1,460 @@
+/* Fuentes 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+
+/** Declaración de las variables para los colores **/
+
+:root {
+    --very-dark-blue: #001B48;
+    --dark-blue: #02457A;
+    --light-blue: #018ABE;
+    --warm-blue: #97CADB;
+    --warm-light-blue: #D6E8EE;
+    --soft-white: #F2F4F8;
+    --white: #FFFFFF;
+    --carrousel-white: #F2F3FB;
+    --silver-gray: #bcbec2a4;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--soft-white);
+}
+
+
+
+/** Estilos del header **/
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    width: 100%;
+    max-width: 767px;
+    height: 40px;
+    padding: 0 20px;
+    background-color: var(--very-dark-blue);
+    border-bottom: 1px solid var(--soft-white);
+}
+
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 747px;
+}
+
+.header__menu__logo {
+    display: block;
+    width: 50px;
+    height: 20px;
+    background-image: url(../images/mobile-images/header-logo-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__menu--button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/mobile-images/menu-button-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__menu--button:hover {
+    cursor: pointer;
+}
+
+/*? Aquí se colocarán los estilos del navbar **/
+
+
+.navbar {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+    z-index: 8;
+}
+
+.navbar--emabled {
+    visibility: visible;
+}
+
+.navbar__list {
+    height: auto;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    list-style: none;
+    z-index: 8;
+}
+
+.navbar__list--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: var(--very-dark-blue);
+    border-bottom: 1px solid var(--soft-white);
+    z-index: 20;
+}
+
+.navbar__list--item:hover,
+.navbar__list--item:active  {
+    cursor: pointer;
+    background-color: #02457A;
+}
+
+.navbar__list--item a {
+    text-decoration: none;
+    color: var(--soft-white);
+}
+
+.navbar--close-button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/mobile-images/close-menu-button-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/** Estilos de first section **/
+
+/*? Estilos de la imagen de presentación **/
+
+.first-section__images {
+    width: 164px;
+    max-width: 300px;
+    height: 153px;
+    max-height: 294px;
+    margin: 42px auto;
+}
+
+
+.first-section__profile-picture {
+    position: relative;
+    display: inline-flex;
+    width: 75px;
+    height: 170px;
+}
+
+.first-section__profile-picture img {
+    position: absolute;
+    top: -169px;
+    left: calc(45%);
+}
+
+
+/*? Estilos del nombre **/ 
+
+.first-section__name {
+    width: 158px;
+    max-width: 208px;
+    height: 81px;
+    max-height: 131px;
+    margin: 0 auto;
+}
+
+.first-section__name h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+
+/*? Diseño del subtitulo **/ 
+
+.first-section__developer {
+    width: 273px;
+    max-width: 303px;
+    height: 29px;
+    max-height: 59px;
+    margin: 29px auto;
+}
+
+.first-section__developer h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--very-dark-blue);
+}
+
+/** Diseño de la sección "acerca de mi" **/
+
+.about-me {
+    width: 100%;
+    height: auto;
+    background-color: var(--very-dark-blue);
+}
+
+.about-me__contents {
+    width: 258px;
+    max-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    padding: 34px 0;
+    color: var(--white);
+}
+
+.about-me__contents h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me__contents p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+}
+
+/** Diseño de la sección "skills" **/
+
+.skills {
+    width: 100%;
+    height: auto;
+    padding: 18px;
+    background-color: var(--carrousel-white);
+
+}
+
+.skills__container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.skills__container h2 {
+    margin-bottom: 17px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3.4rem;
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+
+/*? Diseño del carrousel **/
+
+.carrousel {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 75px;
+}
+
+.skills__container--carrousel div {
+    margin: 0 5px;
+} 
+
+
+/** Diseño de la sección de proyectos **/
+
+.projects {
+    position: relative;
+    padding: 20px 40px;
+    background-color: var(--warm-blue);
+}
+
+.projects h2 {
+    margin: 10px 0 20px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3.4rem;
+    color: var(--very-dark-blue);
+    text-align: center;
+}
+
+/*? Diseño del logo **/
+
+.projects__page-logo {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 25px);
+    display: inline-block;
+    width: 63px;
+    height: 25px;
+    background-image: url(../images/mobile-images/mid-page-logo-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*? Diseño de los proyectos**/
+
+.projects__preview {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects__preview--article {
+    position: relative;
+    margin: 0 auto 20px
+}
+
+.projects__preview--article img {
+    width: 232px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.projects__preview--article:hover img:hover {
+    cursor: pointer;
+    border: 1px solid var(--very-dark-blue);
+}
+
+.projects__preview--article a {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    text-decoration: none;
+}
+
+
+/** Diseño de la sección de contacto **/
+
+.contact-me {
+    width: 100%;
+    padding: 28px 44px;
+    margin: 0 auto;
+    background-color: var(--dark-blue);
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+    color:var(--carrousel-white);
+}
+
+/** Diseño del formilario **/
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+
+label {
+    margin: 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: var(--carrousel-white);
+}
+
+input {
+    width: 100%;
+    max-width: 500px;
+    height: 25px;
+    margin: 5px 0 11px;
+    padding: 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    caret-color: var(--very-dark-blue);
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 5px 0 11px;
+    padding: 5px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    caret-color: var(--very-dark-blue);
+}
+
+#send-message {
+    width: 90%;
+    max-width: 500px;
+    height: 30px;
+    margin: 20px auto 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: var(--carrousel-white);
+    background-color: var(--light-blue);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#send-message:hover {
+    cursor: pointer;
+}
+
+/** Diseño del footer **/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    padding: 0 25px;
+    background-color: var(--very-dark-blue);
+}
+
+.footer__logo {
+    display: inline-block;
+    width: 85px;
+    height: 40px;
+    background-image: url(../images/mobile-images/footer-logo-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.footer__social-medias {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 120px;
+}
+
+.footer__social-medias:hover img:hover {
+    cursor: pointer;
+} 

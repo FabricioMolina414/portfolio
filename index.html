@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./styles/mobile-design.css" media="(min-width: 320px)"/>
+    <link rel="stylesheet" href="./styles/tablet-design.css" media="(min-width: 769px)"/>
+    <link rel="stylesheet" href="./styles/desktop-design.css" media="(min-width: 1067px)"/>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos de Slick-js -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+
+    <!-- Librería Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+    <title>Fabricio Molina</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__menu-box">
+                <span class="header__menu__logo"></span>
+            </div>
+            <span class="header__menu--button"></span>
+        </div>
+        <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__list--item"><a href="#about-me">Acerca de mi</a></li>
+                    <li class="navbar__list--item"><a href="#projects">Proyectos</a></li>
+                    <li class="navbar__list--item"><a href="#contact-me">Contactame</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="first-section">
+        <div class="first-section__images">
+            <img src="./images/mobile-images/bubble-mobile.png" alt="bubble-background"/>
+            <div class="first-section__profile-picture">
+                <img src="./images/profile.png" alt="profile-picture">
+            </div>
+        </div>
+        <div class="first-section__name">
+            <h1>Fabricio Molina</h1>
+        </div>
+        <div class="first-section__developer">
+            <h2>Frontend developer</h2>
+        </div>
+    </section>
+    <section class="background__container">
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="about-me__contents">
+            <h2>Acerca de mi</h2>
+            <p>Soy un desarrollador que está iniciándose en el mundo del desarrollo web. Oriundo de Santo Tomé - Santa Fe.
+            Soy un desarrollador que está iniciándose en el mundo del desarrollo web. Oriundo de Santo Tomé - Santa Fe
+            </p>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="skills__container">
+            <h2>Skills</h2>
+            <section class="skills__container--carrousel carrousel">
+                <div>
+                    <img src="./images/mobile-images/skills/html5.png" alt="HTML5" title="HTML5"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/css3.png" alt="css3" title="CSS"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/javascript.png" alt="javascript" title="Javascript"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/react-js.png" alt="react-js" title="ReactJS"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/firebase.png" alt="firebase" title="Firebase"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/jquery.png" alt="jquery" title="Jquery"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/npm.png" alt="npm" title="NPM"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/figma.png" alt="figma" title="Figma"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/git.png" alt="git" title="Git"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/bootstrap.png" alt="bootstrap" title="Bootstrap"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/chakra ui.png" alt="chakra-ui" title="Chakra-ui"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/nextui.png" alt="next-ui" title="Next-ui"/>
+                </div>
+                <div>
+                    <img src="./images/mobile-images/skills/sass.png" alt="sass" title="SASS"/>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <span class="projects__page-logo"></span>
+        <h2>Proyectos</h2>
+        <section class="projects__preview">
+            <article class="projects__preview--article">
+                <img src="./images/projects/e-commerce page.png" alt="e-commerce">
+                <a href="#">E-commerce page</a>
+            </article>
+            <article class="projects__preview--article">
+                <img src="./images/projects/FAQ.png" alt="FAQ">
+                <a href="#">FAQ</a>
+            </article>
+            <article class="projects__preview--article">
+                <img src="./images/projects/calculator.png" alt="calculator">
+                <a href="#">Calculadora</a>
+            </article>
+        </section>
+    </section>
+    <section class="contact-me" id="contact-me">
+        <h2>Contactame</h2>
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="4746aaa2-0f04-45b9-a286-d87d63086a26">
+
+                <label for="name">Nombre</label>
+                <br/>
+                <input type="text" name="name" required/>
+                <br/>
+                <label for="subject">Asunto</label>
+                <br/>
+                <input type="text" name="subject" required/>
+                <br/>
+                <label for="email">Tu email</label>
+                <br/>
+                <input type="email" name="email" required/>
+                <br/>
+                <label for="message" >Mensaje</label>
+                <br/>
+                <textarea name="message" id="" cols="28" rows="10" required></textarea>
+
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                <button type="submit" id="send-message">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <span class="footer__logo"></span>
+        <div class="footer__social-medias">
+            <a href="#"><img src="./images/mobile-images/footer-linkedin-mobile.png" alt="LinkedIn"/></a>
+            <a href=""><img src="./images/mobile-images/footer-github-mobile.png" alt="Github"/></a>
+        </div>
+    </footer>
+    <script src="./app/index.js"></script>
+    <script src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+</body>
+</html>

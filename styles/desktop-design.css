@@ -1,0 +1,191 @@
+.header {
+    max-width: 100%;
+    background-color: var(--very-dark-blue);
+    border-bottom: none;
+}
+
+.header__menu-box {
+    margin-top: 22px;
+    border-bottom-left-radius: 0px;
+    filter: none;
+}
+
+.navbar {
+    top: 30px;
+    left: calc(17%);
+}
+
+
+.navbar__list--item {
+    width: 150px;
+    height: 30px;
+    color: var(--soft-white);
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: var(--very-dark-blue);
+    border-bottom: none;
+}
+
+.navbar__list--item a {
+    text-decoration: none;
+    color: var(--soft-white);
+}
+
+.navbar__list--item:hover {
+    cursor: pointer;
+    background-color: var(--very-dark-blue);
+    text-decoration: underline;
+}
+
+/** Estilos de la primer sección **/
+
+.first-section {
+    height: 350px;
+    margin-top: -45px;
+    background-color: var(--very-dark-blue);
+}
+
+.first-section__images {
+    width: 550px;
+    max-width: 550px;
+    height: 410px;
+    max-height: 550px;
+    background-color: var(--soft-white);
+    border-top-left-radius: 460px;
+    z-index: 4;
+}
+
+.first-section__images img {
+    width: 45%;
+    top: 33%;
+    left: calc(38%);
+}
+
+
+.first-section__profile-picture {
+    position: absolute;
+    top: 70px;
+    left: calc(44%);
+    display: inline-flex;
+    width: 172px;
+    height: 285px;
+    box-sizing: border-box;
+    content: url(../images/profile-desktop.png);
+}
+
+
+.first-section__name {
+    height: 55px;
+}
+
+.first-section__name h1 {
+    padding-top: 80px;
+    color: var(--soft-white);
+}
+
+.first-section__developer {
+    height: 55px;
+}
+
+.first-section__developer h2 {
+    padding-top: 90px;
+    color: var(--soft-white);
+}
+
+/** Estimlo de la imagen del monitor **/
+
+.background__container {
+    height: 500px;
+}
+
+/** Sección about me **/
+
+.about-me {
+    height: 450px;
+}
+
+
+.about-me h2 {
+    height: 80px;
+    font-size: 4.5rem;
+    line-height: 4.8rem;
+}
+
+.about-me__contents p{
+    height: 200px;
+    max-height: 380px;
+}
+
+
+/** Sección skills **/
+
+.skills {
+    height: 380px;
+}
+
+.skills__container h2 {
+    margin-bottom: 100px;
+    font-size: 4.5rem;
+}
+
+/** Sección proyectos **/
+
+.projects h2 {
+    margin: 60px auto;
+    font-size: 4.5rem;
+}
+
+.projects__preview {
+    max-width: 900px;
+}
+
+.projects__preview--article img {
+    width: 350px;
+    height: 200px;
+}
+
+/** Sección de contacto **/
+
+
+.contact-me h2 {
+    font-size: 4.5rem;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    text-align: center !important;
+}
+
+label {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+
+input {
+    height: 40px;
+    margin: 20px auto;
+    font-size: 2.5rem;
+    border: 2px solid var(--dark-blue);
+}
+
+textarea {
+    max-width: 1900px;
+    margin: 26px 0 30px;
+    font-size: 2.5rem;
+    border: 2px solid var(--dark-blue);
+}
+
+#send-message {
+    width: 40%;
+    max-width: 900px;
+    height: 60px;
+    font-size: 2.5rem;
+}
+
+#send-message:hover {
+    cursor: pointer;
+}
