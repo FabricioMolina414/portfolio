@@ -31,6 +31,10 @@ html {
     background-color: var(--soft-white);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 
 /** Estilos del header **/
