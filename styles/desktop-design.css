@@ -144,6 +144,17 @@
     height: 200px;
 }
 
+.projects__preview--article a {
+    width: 95%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--soft-white);
+}
+
+.projects__preview--article:hover a:hover {
+    text-decoration: underline;
+}
+
 /** Sección de contacto **/
 
 

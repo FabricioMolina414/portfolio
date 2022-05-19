@@ -201,6 +201,12 @@
     border: 2px solid var(--soft-white);
 }
 
+.projects__preview--article a {
+    width: 95%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--soft-white);
+}
 
 /** contact me **/
 
