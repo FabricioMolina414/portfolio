@@ -366,7 +366,9 @@ body {
 /*? Diseño de los proyectos**/
 
 .projects__preview {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -377,6 +379,11 @@ body {
 .projects__preview--article {
     position: relative;
     margin: 0 auto 20px
+}
+
+.projects__preview--article a {
+    display: block;
+    flex-direction: column;
 }
 
 .projects__preview--article img {
